@@ -2,6 +2,7 @@
 #include <fstream>
 using namespace std;
 
+
 int writeFile(string filename){
     ofstream ofs;
 
@@ -38,6 +39,7 @@ int writeFile(string filename){
     }
 
     ofs.close();
+    return num;
 }
 int readFile(string filename){
     ifstream ifs;
@@ -71,4 +73,5 @@ int readFile(string filename){
     cout << "Total Salary: " << total << endl;
     average = total / num;
     cout << "Average Salary: " << average << endl;
+    return num;
 }
